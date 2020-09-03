@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real School</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar navbar-expand-md navstyle">
+        <div class="container">
+            
+            <div class="open">
+                <div id="myNav" class="overlay desktop">
+                    <span class="closebtn" onclick="closeNav()">&times;</span>
+                    <div class="overlay-content">
+                    <a href="#">Register Now</a>
+                    <a href="#">Sign In</a>
+                    </div>
+                </div>
+                <span class="desktop" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
+            
+            <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+            <button class="btn-rad mob-onl">
+                <img src="sing2.jfif" alt="sign" class="sign"> <span class="inr">INR 200</span>
+            </button>
+            <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#clpsnav">
+                <div class="contain" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="clpsnav">
+                <ul class="navbar-nav ml-auto">
+                    <li><a class="nav-link fontcol" href="#">Masterclasses</a></li>
+                    <li><a class="nav-link fontcol" href="#">Programs</a></li>
+                    <li><a class="nav-link fontcol" href="#">Challenges</a></li>
+                    <li><a class="nav-link fontcol" href="#">Library</a></li>
+                </ul>
+                <button class="btn-rad dek-onl">
+                    <img src="sing2.jfif" alt="sign" class="sign"> <span class="inr">INR 200</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+<!-- down-section -->
+
+<div class="container down-section">
+    <div class="cont-left">
+        <div class="home">
+            <p class="hge dek-onl">Home <span>&#155;&#155;</span> Goals <span>&#155;&#155;</span> Explorer <span>&#155;</span></p>
+            <h3 class="trip dek-onl">Trip to the palace of Versailles</h3>
+            <h6 class="online">ONLINE MUSEUM  &nbsp;&nbsp;&nbsp;&nbsp;   8+ Years
+            <h3 class="trip mob-onl">Trip to the palace of Versailles</h3>
+        </div>
+    </div>
+    <div class="cont-right dek-onl">
+        <div class="right-btn">
+            <img src="thumb.png" alt="thumb" class="thumb">
+            <div class="bottom">
+                <span class="smll">125</span>
+                <br>RECOMEND
+            </div>
+        </div>
+        <div class="rb"></div>
+    </div>
+    <div class="rb"></div>
+</div>
+
+<!-- video -->
+<div class="container video-section">
+    <div class="cont-left">
+        <div class="img-over">
+            <img src="real-sch.jpg" alt="sch" class="sch">
+            <div class="top-rt">REAL SCHOOL</div>
+            <div class="btm-lt">
+                <button class="watch">
+                    <a style="color: black;" href="https://therealschool.in/" target="_blank"><img src="video.jpg" class="thumb"> Watch Trailer</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="cont-right">
+        <div class="book">
+            <p class="hge">Live on</p>
+            <p class="june"> 29 June 2020 <span class="for">for 60 min</span></p>
+            <p class="hge">choose slot</p>
+            <div class="timing">
+                <div class="cl">
+                    <button class="pm">10.30 AM</button><p class="hge">2/5 seats left!</p>
+                </div>
+                <div class="cl">
+                    <button class="pm">5 PM</button>
+                </div>
+                <div class="cl">
+                    <button class="pm">6.30 PM</button><p class="hge">1/5 seats left!</p>
+                </div>
+                <div class="rb"></div>
+            </div>
+            <div class="earn">
+                <p class="hge">class Fee</p>
+                <span class="inrrupee"> <s>INR 120</s> <span class="june">INR 60</span></span>
+                <a href="" class="points">Earn 100+ Points</a>
+            </div>
+
+            <div class="free">
+                <button id="myyBtn" class="free-book">Book this class for free</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <p class="pptxt">Thank you for Free Booking</p>
+                    </div>
+                  </div>
+
+                <button class="share">Share</button>
+                <i style="font-size:24px" class="fa mob-onl share">&#xf1e0;</i>
+            </div>
+
+        </div>
+    </div>
+    <div class="rb"></div>
+</div>
+
+
+</body>
+
+
+<!-- humberger -->
+
+<script>
+    function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+    }
+
+
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+    $(document).ready(function(){
+        $(".pm").click(function(){
+            $(this).css("background", "red");
+        });
+    });
+
+
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myyBtn");
+    var span = document.getElementsByClassName("close")[0];
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+</script>
+
+    
+</html>
